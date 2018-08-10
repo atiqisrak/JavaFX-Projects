@@ -1,0 +1,14 @@
+.parent{
+    -fx-background-color: #f1f5f8;
+}
+.topbar{
+    -fx-background-color: #ffffff;
+}
+.icons{
+    -fx-fill: #D7376B;
+}.icons:hover{
+    -fx-fill: #E74B53;
+}
+.buttons{
+
+}

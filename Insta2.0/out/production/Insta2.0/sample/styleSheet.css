@@ -1,0 +1,37 @@
+.parent{
+    -fx-background-color: #3C3F41;
+}
+.topbar{
+    -fx-background-color: #056f00;
+}
+.topbar:hover{
+    -fx-background-color: #0f7a0d;
+}
+.icons{
+    -fx-fill: #bfbfbf;
+}
+.icons:hover{
+    -fx-fill: #ffffff;
+}
+.textbox_email{
+    -fx-background-color: #BABABA;
+    -fx-background-radius: 30px;
+}
+.textbox_password{
+    -fx-background-color: #BABABA;
+    -fx-background-radius: 30px;
+}
+/*#056f00*/
+.login_button{
+    -fx-background-color: linear-gradient(#149112, #0f7a0d, #149112);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}
+
+.login_button:hover{
+    -fx-background-color: linear-gradient(#689b15, #527c0d, #689b15);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}

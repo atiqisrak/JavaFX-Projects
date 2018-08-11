@@ -1,0 +1,43 @@
+.Display {
+    -fx-background-color: #f3f3f3;
+    -fx-background-radius: 10x;
+}
+.button{
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-text-fill: white;
+}
+.button:hover{
+    -fx-background-color: #328D66;
+    -fx-background-radius: 5px;
+}
+.sideBar {
+    -fx-background-color: #5F6368;
+    -fx-background-radius: 0+0+20+0;
+}
+.sideBar:hover {
+    -fx-background-radius: 0+0+20+0;
+}
+.numbers {
+    -fx-background-color: #3C4043;
+    -fx-background-radius: 0+0+0+20;
+}
+.equal{
+    -fx-background-color: #BB5A2C;
+}
+.equal:hover{
+    -fx-background-color: #BB5B30;
+}
+.numbers:hover {
+    -fx-background-radius: 0+0+0+20;
+}
+.topBar {
+    -fx-background-color: #5F6368;
+    -fx-background-radius: 20px+20px+0px+0px;
+}
+.mainPage{
+    -fx-background-radius: 20px;
+}
+.screen{
+    -fx-text-fill: #497573;
+}

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="720.0" styleClass="mainPage" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Pane fx:id="notificationBar" prefHeight="30.0" prefWidth="720.0" styleClass="topBar" stylesheets="@style.css">
+            <padding>
+                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+            </padding>
+        </Pane>
+        <Pane fx:id="display" layoutY="35.0" prefHeight="300.0" prefWidth="720.0" styleClass="Display" stylesheets="@style.css">
+            <children>
+                <TextArea fx:id="screen_2" editable="false" layoutX="10.0" layoutY="2.0" prefHeight="148.0" prefWidth="700.0" promptText="0" styleClass="screen" stylesheets="@style.css">
+                    <font>
+                        <Font size="24.0" />
+                    </font></TextArea>
+                <TextArea fx:id="screen_1" layoutX="10.0" layoutY="150.0" prefHeight="148.0" prefWidth="700.0" styleClass="screen" stylesheets="@style.css">
+                    <font>
+                        <Font size="24.0" />
+                    </font></TextArea>
+            </children></Pane>
+        <Pane fx:id="numbers" layoutY="335.0" prefHeight="746.0" prefWidth="540.0" styleClass="numbers" stylesheets="@style.css">
+            <children>
+                <GridPane prefHeight="746.0" prefWidth="540.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Button fx:id="button_equal" mnemonicParsing="false" onAction="#action" prefHeight="259.0" prefWidth="276.0" styleClass="equal" stylesheets="@style.css" text="=" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                            <font>
+                                <Font name="Meltix Bold Demo" size="30.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="button_0" mnemonicParsing="false" onAction="#action" prefHeight="259.0" prefWidth="276.0" styleClass="button" stylesheets="@style.css" text="0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                            <font>
+                                <Font name="Meltix Bold Demo" size="30.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="button_dot" mnemonicParsing="false" onAction="#action" prefHeight="259.0" prefWidth="276.0" styleClass="button" stylesheets="@style.css" text="." textAlignment="CENTER" GridPane.rowIndex="3">
+                            <font>
+                                <Font name="Meltix Bold Demo" size="30.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="button_1" mnemonicParsing="false" onAction="#action" prefHeight="259.0" prefWidth="276.0" styleClass="button" stylesheets="@style.css" text="1" textAlignment="CENTER" GridPane.rowIndex="2">
+                            <font>
+                                <Font name="Meltix Bold Demo" size="30.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="button_2" mnemonicParsing="false" onAction="#action" prefHeight="259.0" prefWidth="276.0" styleClass="button" stylesheets="@style.css" text="2" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                            <font>
+                                <Font name="Meltix Bold Demo" size="30.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="button_3" mnemonicParsing="false" onAction="#action" prefHeight="259.0" prefWidth="276.0" styleClass="button" stylesheets="@style.css" text="3" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                            <font>
+                                <Font name="Meltix Bold Demo" size="30.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="button_4" mnemonicParsing="false" onAction="#action" prefHeight="259.0" prefWidth="276.0" styleClass="button" stylesheets="@style.css" text="4" textAlignment="CENTER" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="Meltix Bold Demo" size="30.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="button_5" mnemonicParsing="false" onAction="#action" prefHeight="259.0" prefWidth="276.0" styleClass="button" stylesheets="@style.css" text="5" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="Meltix Bold Demo" size="30.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="button_6" mnemonicParsing="false" onAction="#action" prefHeight="259.0" prefWidth="276.0" styleClass="button" stylesheets="@style.css" text="6" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="Meltix Bold Demo" size="30.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="button_7" mnemonicParsing="false" onAction="#action" prefHeight="259.0" prefWidth="276.0" styleClass="button" stylesheets="@style.css" text="7" textAlignment="CENTER">
+                            <font>
+                                <Font name="Meltix Bold Demo" size="30.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="button_8" mnemonicParsing="false" onAction="#action" prefHeight="259.0" prefWidth="276.0" styleClass="button" stylesheets="@style.css" text="8" textAlignment="CENTER" GridPane.columnIndex="1">
+                            <font>
+                                <Font name="Meltix Bold Demo" size="30.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="button_9" mnemonicParsing="false" onAction="#action" prefHeight="259.0" prefWidth="276.0" styleClass="button" stylesheets="@style.css" text="9" textAlignment="CENTER" GridPane.columnIndex="2">
+                            <font>
+                                <Font name="Meltix Bold Demo" size="30.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </GridPane>
+            </children>
+        </Pane>
+        <Pane fx:id="signs" layoutX="540.0" layoutY="335.0" prefHeight="746.0" prefWidth="180.0" styleClass="sideBar" stylesheets="@style.css">
+            <children>
+                <GridPane accessibleRole="BUTTON" prefHeight="746.0" prefWidth="180.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="198.0" minWidth="10.0" prefWidth="91.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Button fx:id="button_AC" mnemonicParsing="false" onAction="#action" prefHeight="206.0" prefWidth="262.0" stylesheets="@style.css" text="AC">
+                            <font>
+                                <Font name="Meltix Bold Demo" size="32.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="button_devide" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#action" prefHeight="206.0" prefWidth="262.0" stylesheets="@style.css" text="÷" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="Meltix Bold Demo" size="32.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="button_multiply" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#action" prefHeight="206.0" prefWidth="262.0" stylesheets="@style.css" text="×" GridPane.rowIndex="2">
+                            <font>
+                                <Font name="Meltix Bold Demo" size="32.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="button_substract" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#action" prefHeight="206.0" prefWidth="262.0" stylesheets="@style.css" text="-" GridPane.rowIndex="3">
+                            <font>
+                                <Font name="Meltix Bold Demo" size="32.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="button_plus" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#action" prefHeight="206.0" prefWidth="262.0" stylesheets="@style.css" text="+" GridPane.rowIndex="4">
+                            <font>
+                                <Font name="Meltix Bold Demo" size="32.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </GridPane>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
